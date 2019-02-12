@@ -1,9 +1,7 @@
 <template>
   <div id="app">
   <mt-header fixed title="vue案例"></mt-header>
-
     <router-view/>
-
   <nav class="mui-bar mui-bar-tab">
 			<router-link class="mui-tab-item" to="/home">
 				<span class="mui-icon mui-icon-home"></span>
