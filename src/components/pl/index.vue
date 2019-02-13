@@ -4,11 +4,11 @@
     <hr>
     <textarea placeholder="请输入要BB的内容（做多吐槽120字）" maxlength="120"></textarea>
 
-    <mt-button type="primary" size="large">发表评论</mt-button>
+    <mt-button type="primary" size="large">发表你写的评论</mt-button>
 
 
 
-    <mt-button type="danger" size="large" plain>加载评论</mt-button>
+    <mt-button type="danger" size="large" plain>加载更多评论</mt-button>
   </div>
 </template>
 <script>
