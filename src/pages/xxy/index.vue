@@ -5,7 +5,7 @@
         <!-- 子标题 -->
         <p class="subtitle">
         <span>发表时间：{{ pc.add_time | pc }}</span>
-        <span>点击：{{ pc.click }}次</span>
+        <span>点击：{{ pc.click }}次了</span>
         </p>
 
         <hr>

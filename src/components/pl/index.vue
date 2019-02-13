@@ -8,7 +8,7 @@
 
 
 
-    <mt-button type="danger" size="large" plain>加载更多</mt-button>
+    <mt-button type="danger" size="large" plain>加载更多评论</mt-button>
   </div>
 </template>
 <script>
