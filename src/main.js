@@ -16,6 +16,7 @@ Vue.use(MintUI)
 
 // 导入mui的文件和拓展文件
 import './lib/mui/css/mui.css'
+// 这个要放在拓展文件后面
 import './lib/mui/css/icons-extra.css'
 
 // 清除css默认样式
