@@ -32,6 +32,10 @@ Vue.filter('pc', function(dateStr, pattern = 'YYYY-MM-DD HH:mm:ss') {
    return moment(dateStr).format(pattern)
 })
 
+// 李天成老师专属组件-----图片预览
+import VuePreview from 'vue-pic-preview'
+Vue.use(VuePreview)
+
 // 设置vue-resource的请求根路径
 Vue.http.options.root = 'http://www.lovegf.cn:8899/api/';
 

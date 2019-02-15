@@ -2,9 +2,9 @@
  <div class="cmt-container">
     <h3>发表评论</h3>
     <hr>
-    <textarea placeholder="请输入要BB的内容（做多吐槽120字）" maxlength="120"></textarea>
+    <textarea placeholder="请输入要BB的内容（做多吐槽120字）" maxlength="120" v-model='msg'></textarea>
 
-    <mt-button type="primary" size="large">发表你写的评论</mt-button>
+    <mt-button type="primary" size="large" @click='fabiao'>发表你写的评论</mt-button>
 
     <div class="cmt-list">
       <div class="cmt-item" v-for="(item, i) in all" :key="item.add_time">
@@ -22,9 +22,10 @@
 export default {
     data(){
         return{
-            Id:this.id,
+            // Id:this.id,
             page: 1, 
-            all: [] 
+            all: [] ,
+            msg:''
         }
     },
     props:["id"],
@@ -33,14 +34,24 @@ export default {
     },
     methods: {
         pp(){
-            this.$http.get("getcomments/" + this.Id + "?pageindex=" + this.page).then(res=>{
+            this.$http.get("getcomments/" + this.id + "?pageindex=" + this.page).then(res=>{
                 this.all = this.all.concat(res.body.message);
             })
         },
-         getMore() {
-         this.page++;
-         this.pp();
-         }
+        fabiao(){
+            if (this.msg.trim().length === 0)
+            return alert("评论内容不能为空哦亲!");
+            this.$http.post("postcomment/" + this.id, { content: this.msg }).then(res=>{
+                this.all=[];
+                this.page=1;
+                this.pp();
+                this.msg=''
+            })
+        },
+        getMore() {
+        this.page++;
+        this.pp();
+        }
         
     }
 }

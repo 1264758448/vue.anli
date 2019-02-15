@@ -13,7 +13,7 @@
         <!-- 内容区域 -->
         <div class="content" v-html="pc.content"></div>
 
-        <pl :id='id'></pl>
+        <pl :id='this.id'></pl>
     </div>
 </template>
 <script>

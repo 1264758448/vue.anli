@@ -13,7 +13,7 @@
 		            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4"><router-link  to="/home/xiangqing" class='a'>
 		                    <img src='../../assets/menu1.png'></img>
 		                    <div class="mui-media-body">Home</div></router-link></li>
-		            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4"><router-link to="/" class='a'>
+		            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4"><router-link to="/home/xiangqing2" class='a'>
 		                    <img src='../../assets/menu2.png'></img>
 		                    <div class="mui-media-body">Email</div></router-link></li>
 		            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4"><router-link to="/" class='a'>
