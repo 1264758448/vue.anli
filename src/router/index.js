@@ -10,6 +10,10 @@ import xiangqing from '@/pages/xiangqing'
 import xxy from '@/pages/xxy'
 import xiangqing2 from '@/pages/xiangqing2'
 import tupian from '@/pages/tupian'
+import shangpin1 from '@/pages/shangpin1'
+import shangpin2 from '@/pages/shangpin2'
+import shangpin2and1 from '@/pages/shangpin2and1'
+import shangpin2adn2 from '@/pages/shangpin2adn2'
 Vue.use(Router)
 
 export default new Router({
@@ -22,7 +26,11 @@ export default new Router({
     { path: '/home/xiangqing',component: xiangqing},
     { path: '/home/xxy/:id',component: xxy},
     { path: '/home/xiangqing2',component: xiangqing2},
-    { path: '/home/tupian/:id',component: tupian}
+    { path: '/home/tupian/:id',component: tupian},
+    { path: '/home/shangpin1',component: shangpin1},
+    { path: '/home/shangpin2/:id',component: shangpin2},
+    { path: '/home/shangpin2and1/:id',component: shangpin2and1},
+    { path: '/home/shangpin2adn2/:id',component: shangpin2adn2},
   ],
   linkActiveClass :'mui-active'
 })

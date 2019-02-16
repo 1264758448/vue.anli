@@ -1,7 +1,7 @@
 <template>
   <div id="app">
   <mt-header fixed title="vue案例"></mt-header>
-   <transition>
+   <transition name='app'>
 	 		 <router-view/>
 	 </transition>
   <nav class="mui-bar mui-bar-tab">
@@ -14,7 +14,7 @@
 				<span class="mui-tab-label">会员集会</span>
 			</router-link>
 			<router-link class="mui-tab-item1" to="/shopcart">
-      <span class="mui-icon mui-icon-extra mui-icon-extra-cart"><span class="mui-badge">0</span></span>
+      <span class="mui-icon mui-icon-extra mui-icon-extra-cart"><span class="mui-badge" id='bad'>0</span></span>
 				<span class="mui-tab-label">购物车辆</span>
 			</router-link>
 			<router-link class="mui-tab-item1" to="/search">
@@ -38,18 +38,18 @@ export default {
       padding-bottom: 50px;
 			overflow-x: hidden;
 }
-	.v-enter{
+	.app-enter{
 		opacity:0;
 		transform:translateX(100%)
 	}
-	.v-leave-to{
+	.app-leave-to{
 		opacity:0;
 		transform:translateX(-100%);
 		position: absolute;
 	}
 
-	.v-enter-active,
-	.v-leave-active{
+	.app-enter-active,
+	.app-leave-active{
 		transition:all 0.5s ease;
 	}
 
